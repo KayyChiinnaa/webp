@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Pengiriman - SITTA UT</title>
+    <link rel="icon" href="assets/mit.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+            <div class="header-left">
+                <img src="assets/mit.png" alt="Logo MIT" class="logo">
+                <h1>
+                    Massachusetts<br>
+                    <span style="font-weight: 400;">Institute of Technology</span>
+                </h1>
+            </div>
+        </header>
+
+        <nav class="dashboard-nav">
+            <ul class="nav-left">
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="stok.html" class="nav-link">Informasi Bahan Ajar</a></li>
+                <li><a href="tracking.html" class="nav-link active">Tracking Pengiriman</a></li>
+                <li class="dropdown">
+                    <a href="materi.html" class="nav-link">Materi</a>
+                    
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="logoutBtn" class="btn-logout">Keluar</button>
+            </div>
+        </nav>
+
+        <main class="tracking-main">
+            <section class="tracking-header">
+                <h2>Tracking Pengiriman</h2>
+                <p>Lacak status pengiriman bahan ajar Anda dengan mudah.</p>
+            </section>
+            
+  
+            <div class="tracking-form">
+                <div class="form-group">
+                    <label for="doNumber">Nomor Delivery Order</label>
+                    <input type="text" id="doNumber" name="doNumber" placeholder="Masukkan nomor DO">
+                </div>
+                <button id="searchBtn" class="btn-primary">Cari</button>
+            </div>
+      
+            <div id="trackingResult" class="tracking-result">
+            </div>
+            <section class="dummy-section">
+                <h3>Data Dummy untuk Testing</h3>
+                <p class="subtitle">Gunakan nomor DO berikut untuk mencoba fitur tracking:</p>
+                
+                <table class="stock-table dummy-table">
+                    <thead>
+                        <tr>
+                            <th>Nomor DO</th>
+                            <th>Nama Mahasiswa</th>
+                            <th>Status</th>
+                            <th>Progress</th>
+                            <th>Ekspedisi</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dummyTableBody">
+                        <!-- Data akan diisi oleh JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 SITTA UT | Dikembangkan oleh MIT Dev Team</p>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

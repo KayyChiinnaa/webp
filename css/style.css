@@ -1,0 +1,427 @@
+/* ===== RESET DAN BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( #A31F34, #ffffff);
+}
+
+.login-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 1rem;
+}
+
+.logo-section h1 {
+    color: #A31F34;
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #A31F34;
+}
+
+.form-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: #A31F34;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link-btn:hover {
+    color: #7E1425;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #A31F34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #7E1425;
+}
+
+.btn-secondary {
+    padding: 0.5rem 1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.register-section {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #555;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    flex-direction: column; 
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-left h1 {
+    margin-top: 0.5rem;
+    color: #A31F34;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ===== NAVBAR ===== */
+.dashboard-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A31F34;
+    padding: 0 1rem;
+}
+
+.dashboard-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #7E1425;
+}
+
+/* ===== TOMBOL LOGOUT ===== */
+.btn-logout {
+    background-color: #ffffff;
+    color: #A31F34;
+    border: 2px solid #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #B4B5B8;
+    color: #fff;
+}
+
+/* ===== CARD ===== */
+.dashboard-main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: #A31F34;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+/* ===== TRACKING ===== */
+.tracking-main {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: flex-end;
+}
+
+.tracking-form .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* ===== STATUS ===== */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-dikirim {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status-diproses {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-selesai {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* ===== TABEL & STOK ===== */
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stock-table th,
+.stock-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.stock-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* ===== MODAL ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #A31F34;
+}
+
+.close:hover {
+    color: #7E1425;
+}
+
+/* ===== ALERT ===== */
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+/* ===== TOMBOL AKSI (EDIT & HAPUS) ===== */
+.action-btn {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease;
+    margin-right: 0.3rem;
+}
+.edit-btn {
+    background-color: #007bff;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.delete-btn {
+    background-color: #dc3545; 
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+
+.stock-table td .action-btn {
+    display: inline-block;
+}/* ===== TOMBOL SALIN & GUNAKAN ===== */
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.copy-do-btn,
+.use-do-btn {
+    padding: 0.45rem 0.9rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Tombol "Salin" */
+.copy-do-btn {
+    background-color: #A31F34;
+}
+
+.copy-do-btn:hover {
+    background-color: #7E1425;
+}
+
+/* Tombol "Gunakan" */
+.use-do-btn {
+    background-color: #28a745;
+}
+
+.use-do-btn:hover {
+    background-color: #1e7e34;
+}
+

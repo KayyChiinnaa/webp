@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Bahan Ajar - SITTA UT</title>
+    <link rel="icon" href="assets/mit.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- ===== HEADER ===== -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <img src="assets/mit.png" alt="Logo MIT" class="logo">
+                <h1>
+                    Massachusetts<br>
+                    <span style="font-weight: 400;">Institute of Technology</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- ===== NAVBAR ===== -->
+        <nav class="dashboard-nav">
+            <ul class="nav-left">
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="stok.html" class="nav-link active">Informasi Bahan Ajar</a></li>
+                <li><a href="tracking.html" class="nav-link">Tracking Pengiriman</a></li>
+                <li><a href="materi.html" class="nav-link">Materi</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button id="logoutBtn" class="btn-logout">Keluar</button>
+            </div>
+        </nav>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="dashboard-main">
+            <section class="stok-section">
+                <div class="stok-header">
+                    <h2>Informasi Stok Bahan Ajar</h2>
+                    <button id="addStockBtn" class="btn-primary">+ Tambah Stok</button>
+                </div>
+
+                <div class="stok-table-wrapper">
+                    <table id="stockTable" class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Kode Bahan</th>
+                                <th>Nama Bahan</th>
+                                <th>Stok</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stockTableBody">
+                            <!-- Data dari JS akan dimuat di sini -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 <strong>SITTA UT</strong> | Dikembangkan oleh <strong>MIT Dev Team</strong></p>
+        </footer>
+    </div>
+
+    <!-- ===== MODAL TAMBAH STOK ===== -->
+    <div id="addStockModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Tambah Stok Baru</h2>
+
+            <form id="addStockForm">
+                <div class="form-group">
+                    <label for="kodeBahan">Kode Bahan</label>
+                    <input type="text" id="kodeBahan" name="kodeBahan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="namaBahan">Nama Bahan</label>
+                    <input type="text" id="namaBahan" name="namaBahan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="stok">Jumlah Stok</label>
+                    <input type="number" id="stok" name="stok" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status" required>
+                        <option value="Tersedia">Tersedia</option>
+                        <option value="Habis">Habis</option>
+                        <option value="Terbatas">Terbatas</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
