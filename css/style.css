@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient( #A31F34, #ffffff);
+    background: linear-gradient(#A31F34, #ffffff);
 }
 
 .login-form {
@@ -132,15 +132,13 @@ body {
 .dashboard-header {
     display: flex;
     justify-content: center;
-    align-items: center;     
-    flex-direction: column; 
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     padding: 2rem 1rem;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .header-left {
     display: flex;
@@ -149,14 +147,12 @@ body {
     justify-content: center;
 }
 
-
 .header-left h1 {
     margin-top: 0.5rem;
     color: #A31F34;
     font-size: 1.4rem;
     line-height: 1.3;
 }
-
 
 .header-right {
     display: flex;
@@ -356,7 +352,8 @@ body {
     color: #155724;
     border: 1px solid #c3e6cb;
 }
-/* ===== TOMBOL AKSI (EDIT & HAPUS) ===== */
+
+/* ===== ACTION BUTTONS (EDIT & DELETE) ===== */
 .action-btn {
     padding: 0.4rem 0.8rem;
     border: none;
@@ -365,30 +362,29 @@ body {
     cursor: pointer;
     font-weight: 500;
     color: white;
-    transition: all 0.3s ease;
     margin-right: 0.3rem;
+    transition: all 0.3s ease;
 }
+
 .edit-btn {
     background-color: #007bff;
 }
-
 .edit-btn:hover {
     background-color: #0056b3;
 }
 
-
 .delete-btn {
-    background-color: #dc3545; 
+    background-color: #dc3545;
 }
-
 .delete-btn:hover {
     background-color: #a71d2a;
 }
 
-
 .stock-table td .action-btn {
     display: inline-block;
-}/* ===== TOMBOL SALIN & GUNAKAN ===== */
+}
+
+/* ===== TOMBOL SALIN & GUNAKAN ===== */
 .action-buttons {
     display: flex;
     gap: 0.5rem;
@@ -407,21 +403,110 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Tombol "Salin" */
 .copy-do-btn {
     background-color: #A31F34;
 }
-
 .copy-do-btn:hover {
     background-color: #7E1425;
 }
 
-/* Tombol "Gunakan" */
 .use-do-btn {
     background-color: #28a745;
 }
-
 .use-do-btn:hover {
     background-color: #1e7e34;
 }
 
+/* ========================================================= */
+/* ========== RESPONSIVE UNTUK HANDPHONE <= 720px ========== */
+/* ========================================================= */
+@media (max-width: 720px) {
+
+    /* Login Page */
+    .login-form {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+
+    .logo-section h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Dashboard Header */
+    .dashboard-header {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .header-left h1 {
+        font-size: 1.1rem;
+    }
+
+    /* Navbar */
+    .dashboard-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .dashboard-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    /* Cards */
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    /* Tracking Form */
+    .tracking-form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tracking-form .form-group {
+        width: 100%;
+    }
+
+    /* Table */
+    .stock-table th,
+    .stock-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Buttons Responsive */
+    .action-buttons {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .action-btn,
+    .copy-do-btn,
+    .use-do-btn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        margin-top: 40%;
+        padding: 1.5rem;
+    }
+    }
